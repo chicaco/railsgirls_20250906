@@ -66,6 +66,6 @@ class IdeasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def idea_params
-      params.expect(idea: [ :name, :description, :picture ])
+      params.expect(idea: [:name, :description, :picture])
     end
 end
